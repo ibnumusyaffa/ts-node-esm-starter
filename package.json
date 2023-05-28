@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app/server.ts",
-    "build": "rimraf ./build && tsc"
+    "dev": "tsx watch src/app/server.ts",
+    "start": "node build/app/server.js",
+    "build": "rimraf ./build && tsc && tsc-alias"
   },
   "keywords": [],
   "author": "",
@@ -22,10 +23,11 @@
     "nodemon": "^2.0.22",
     "prettier": "2.8.8",
     "rimraf": "^5.0.0",
-    "ts-node": "^10.9.1",
+    "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "consola": "^3.1.0",
     "express": "^4.18.2",
     "mysql2": "^3.3.1"
   }

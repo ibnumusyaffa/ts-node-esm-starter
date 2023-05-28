@@ -1,10 +1,10 @@
 import express from "express";
-import * as userController from "../controllers/userContoller.js";
-
+import * as userController from "app/controllers/userContoller.js";
+import { abc } from "@/config/index.js";
 const router = express.Router();
 
 router.get("/", (_, res) => {
-  res.json({ message: "Starterkit API" });
+  res.json({ message: "aaaaasas" });
 });
 
 router.get("/users", userController.list);

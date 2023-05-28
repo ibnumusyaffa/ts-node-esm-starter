@@ -26,7 +26,7 @@ export async function create(
 export async function list(req: Request, res: Response, next: NextFunction) {
   try {
     return res.send({
-      message: "list",
+      message: "asasas",
     });
   } catch (error) {
     return next(error);

@@ -3,17 +3,17 @@
     "lib": ["es2022"],
     "target": "es2022",
     "module": "NodeNext",
-    "moduleResolution": "nodenext",
     "skipLibCheck": true,
     "outDir": "build",
-    "resolveJsonModule":true,
+    "resolveJsonModule": true,
     "strict": true,
     "sourceMap": true,
-    "allowUnreachableCode":false,
+    "allowUnreachableCode": false,
     "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
-  "include": ["src/**/*"],
-  "ts-node": {
-    "esm": true
-  },
+  "include": ["src/**/*"]
 }
